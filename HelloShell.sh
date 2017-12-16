@@ -10,3 +10,5 @@ echo $MESSAGE "on" ${HOST}...
 
 #calling a function.
 Hello Mano Yaka nethmini Sen minoli
+
+echo file_count /etc
