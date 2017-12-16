@@ -1,3 +1,6 @@
 #!/bin/bash
 
-echo "Mano Yaka"
+MESSAGE="Scripting is Fun!"
+HOST=$(hostname)
+
+echo $MESSAGE "on" ${HOST}...
