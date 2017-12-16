@@ -7,15 +7,24 @@ read -p "Enter a file or folder name " ITEM
 
 echo $ITEM
 
-if [ -d $ITEM ]
+if [ -e $ITEM ]
 then
-    echo $ITEM "is a directory"
-    echo "These are the items in" $ITEM
-
-    ls -la $ITEM
-else
-    if [ -f $ITEM ]
+    if [ -d $ITEM ]
     then
-    echo $ITEM "is a file"
+        echo $ITEM "is a directory"
+        echo "These are the items in" $ITEM
+
+        ls -la $ITEM
+        exit 1
+    elif [ -f $ITEM ]
+    then
+        echo $ITEM "is a regular file"
+        exit 0
+    else
+        echo $ITEM "is an other file"
+        exit 2
     fi
+else
+    echo $ITEM "is an invalid file or directory"
+    exit 21
 fi
