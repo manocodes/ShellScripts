@@ -9,5 +9,4 @@ HOST=$(hostname)
 echo $MESSAGE "on" ${HOST}...
 
 #calling a function.
-Hello
-
+Hello Mano Yaka nethmini Sen minoli
