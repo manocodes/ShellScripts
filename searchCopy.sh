@@ -24,13 +24,13 @@ function renameFiles()
     read -p "Enter a file extension you want to rename " EXT
     read -p "Enter a file prefix you want to use " PREF
 
-    for FILE in *.$EXT
+    for FILE in *$EXT
     do 
-        if [ $PREF = "" ]
+        if [ "$PREF" = "" ]
         then
-            mv -v   $FILE  $(date +%F)-$FILE   
+            mv -v $FILE  $(date +%F)-$FILE   
         else
-            mv -v   $FILE  ${PREF}-${FILE}   
+            mv -v $FILE  ${PREF}-${FILE}   
         fi 
     done
 }

@@ -7,9 +7,10 @@ case $OPT in
         /tmp/sleep­walking­server.pid
         ;;
     stop)
-        kill $(cat /tmp/sleep­-walking­-server.pid)
+        kill $(cat /tmp/sleep­walking­server.pid)
         ;;
     *)
         echo "usage: start:stop" ; exit 1
         ;;
     esac
+    

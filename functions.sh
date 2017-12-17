@@ -18,5 +18,3 @@ do
     n=`expr $n + 1`
 done
 }
-
-create_testfiles
