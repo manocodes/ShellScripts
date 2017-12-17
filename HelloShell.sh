@@ -12,3 +12,6 @@ echo $MESSAGE "on" ${HOST}...
 Hello Mano Yaka nethmini Sen minoli
 
 echo file_count /etc
+
+#this is my root 
+#/users/uyakama/Development/ShellScripts

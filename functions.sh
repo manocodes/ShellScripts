@@ -8,13 +8,15 @@ function Hello()
     done
 }
 
-function file_count()
+function create_testfiles()
 {
-    local FOLDER=$1
+    n=1
 
-    local RETURN=ls -1 | wc -l
-
-    echo $RETURN
-
-    return RETURN
+while [ $n -le 10 ]
+do
+	touch image${n}.jpg
+    n=`expr $n + 1`
+done
 }
+
+create_testfiles
